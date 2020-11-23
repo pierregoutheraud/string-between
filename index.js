@@ -47,6 +47,10 @@ function getStringBetween(
     return nextLastChar(before);
   }
 
+  if (before === after) {
+    throw new Error(`No string between ${before} and ${after}.`);
+  }
+
   // Swap before and after
   if (before >= after) {
     const temp = before;
