@@ -4,11 +4,9 @@ function getStringBetween(
   minCharCode = 48,
   maxCharCode = 126
 ) {
-  // Should never return a string with first character at the end
-
   // Min and max char codes possible
   const CHARCODES = [minCharCode, maxCharCode]; // 0-9 => [48, 57]
-  const firstChar = String.fromCharCode(CHARCODES[0]);
+  const firstChar = String.fromCharCode(CHARCODES[0]); // Should never return a string with first character at the end
   const middleChar = String.fromCharCode(
     Math.floor((CHARCODES[0] + CHARCODES[1]) / 2)
   );
@@ -79,7 +77,7 @@ function getStringBetween(
 
     if (roomBetween < 1) {
       // If afterChar is firstChar it means 85 vs 90
-      // (firstChar here is from padEnd because no ranks can finish by firstChar otherwise)
+      // (firstChar here is from padEnd because no response string can finish by firstChar otherwise)
       // so we can just getNextChar of 5 ==> 86
       if (afterChar === firstChar) {
         newStr = nextLastChar(newStr + beforeChar);
