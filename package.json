@@ -1,7 +1,7 @@
 {
   "name": "string-between",
   "description": "Get a string between (when compared) two other strings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "Pierre Goutheraud <pierre.goutheraud@gmail.com>",
   "license": "MIT",
