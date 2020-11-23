@@ -1,0 +1,22 @@
+{
+  "name": "string-between",
+  "description": "Get a string between (when compared) two other strings",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pierre Goutheraud <pierre.goutheraud@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "yarn jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierregoutheraud/string-between.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pierregoutheraud/string-between/issues"
+  },
+  "homepage": "https://github.com/pierregoutheraud/string-between#readme"
+}
